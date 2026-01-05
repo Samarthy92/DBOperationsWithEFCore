@@ -1,0 +1,12 @@
+# Ignore Visual Studio local workspace
+.vs/
+# Optional common entries
+*.user
+*.suo
+bin/
+obj/
+# Remove only from index (keeps local files)
+git rm -r --cached DBOperationsWithEFCoreApp/DBOperationsWithEFCoreApp/.vs
+git add .gitignore
+git commit -m "Remove .vs and ignore Visual Studio workspace files"
+git push
